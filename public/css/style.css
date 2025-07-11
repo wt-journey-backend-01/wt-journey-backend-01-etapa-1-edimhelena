@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 254);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+header{
+    padding: 20px;
+    background-color: rgb(179, 9, 63);
+    color: white;
+}
+
+#corpoCardapio{
+    padding: 20px;
+}
+
+#cardapio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.descricao{
+    display: flex;
+}
+
+.hb{
+    background-color: rgb(100, 183, 204);
+}
+
+#cardapio img{
+    max-height: 200px;
+}
