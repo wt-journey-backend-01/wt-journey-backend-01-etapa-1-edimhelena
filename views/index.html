@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Home</title>
 </head>
 
@@ -13,7 +13,7 @@
         <h1>DevBurger</h1>
     </header>
 
-    <div id="corpoCardapio">
+    <div class="corpoCardapio">
         <h2>Cardapio</h2>
         <hr>
 
@@ -41,6 +41,22 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="corpoCardapio">
+        <h2>Envie sugestões de lanches!</h2>
+        <hr>
+        
+        <div id="area">
+            <form action="/sugestao" method="GET" autocomplete="off" id="formulario">
+                <fieldset>
+                    <legend>Formulário</legend>
+                    <label for="">Nome: </label><input type="text" name="nome">
+                    <label for="">Ingredientes: </label><textarea name="ingredientes" cols="35" rows="8"></textarea>
+                    <button class="btn_submit" type="submit">Enviar</button>
+                </fieldset>
+            </form>
         </div>
     </div>
 </body>

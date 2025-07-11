@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: rgb(255, 255, 254);
+    background-color: rgb(255, 255, 242);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: larger;
 }
@@ -11,7 +11,7 @@ header{
     color: white;
 }
 
-#corpoCardapio{
+.corpoCardapio{
     padding: 20px;
 }
 
@@ -20,6 +20,11 @@ header{
     flex-direction: column;
     justify-content: center;
     row-gap: 10px;
+    color: white;
+}
+
+#cardapio h3{
+    color: rgb(179, 9, 63);
 }
 
 .descricao{
@@ -28,8 +33,25 @@ header{
 
 .hb{
     background-color: rgb(100, 183, 204);
+    padding: 20px;
 }
 
 #cardapio img{
     max-height: 200px;
+}
+
+#area{
+    display: flex;
+    justify-content: flex-start;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    background-color: rgb(100, 183, 204);
+}
+
+form button{
+    display: block;
 }

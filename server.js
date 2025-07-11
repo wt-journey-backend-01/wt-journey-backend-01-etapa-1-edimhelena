@@ -4,9 +4,16 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
-    res.send("Hello World!");
+    res.sendFile(path.join(__dirname, "views", "index.html"));
 });
+
+app.get('/sugestao', (req, res) => {
+  const {nome, ingredientes} = req.query
+  res.send(`<h1>Obrigada pela sugestão, ${nome}!</h1> <p>Ingredientes: ${ingredientes}</p> <p><a href="/">Voltar para o início</a></p>`)
+})
 
 // Middleware 404
 app.use((req, res) => {
