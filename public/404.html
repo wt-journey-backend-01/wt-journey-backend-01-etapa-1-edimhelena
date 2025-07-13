@@ -10,15 +10,15 @@
 <body>
     <div id="bg">
         <div id="texto">
-            <h2>Página não encontrada</h2>
-            <p><a href="/">Voltar para o início</a></p>
+            <h2>Página não encontrada :(</h2>
+            <a href="/">Voltar para o início</a>
         </div>
     </div>
 </body>
 <style>
     body {
         height: 90vh;
-        background-color: rgb(69, 21, 49);
+        background-color: rgb(255, 255, 242);
         color: white;
         display: flex;
         justify-content: center;
@@ -27,16 +27,34 @@
     }
 
     #bg {
-        background-color: rgb(39, 10, 27);
-        border-radius: 20px;
+        background-color: rgb(100, 183, 204);
+        border-radius: 8px;
+        box-shadow: 5px 5px 12px #888888;
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    #texto{
+    #texto {
         padding: 20px;
     }
 
     a {
+        margin-top: 20px;
+        display: inline-block;
+        text-decoration: none;
         color: white;
+        background-color: #B3093F;
+        padding: 10px 20px;
+        border-radius: 6px;
+        transition: background-color 0.3s;
+    }
+
+    a:hover {
+        background-color: #B3093F;
     }
 </style>
 
