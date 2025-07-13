@@ -6,9 +6,33 @@ body{
 }
 
 header{
-    padding: 20px;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(179, 9, 63);
     color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgb(69, 21, 49);
+    border-radius: 5px;
 }
 
 .corpoCardapio{
