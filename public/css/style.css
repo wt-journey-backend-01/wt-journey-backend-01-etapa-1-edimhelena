@@ -3,6 +3,7 @@ body{
     background-color: rgb(255, 255, 242);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: larger;
+    text-shadow: 1px 1px 1px #888888;
 }
 
 header{
@@ -37,18 +38,26 @@ nav a:hover {
 
 .corpoCardapio{
     padding: 20px;
+    color: rgb(179, 9, 63);
 }
 
 #cardapio{
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 10px;
     row-gap: 10px;
     color: white;
 }
 
 #cardapio h3{
-    color: rgb(179, 9, 63);
+    color: white;
+}
+
+.ingredientes{
+    background-color: rgb(100, 183, 204);
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .descricao{
@@ -56,26 +65,59 @@ nav a:hover {
 }
 
 .hb{
-    background-color: rgb(100, 183, 204);
+    background-color: rgb(179, 9, 63);
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 12px #888888;
 }
 
 #cardapio img{
     max-height: 200px;
 }
 
-#area{
+#area {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-fieldset{
+form{
+    width: 100%;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
-    row-gap: 12px;
-    background-color: rgb(100, 183, 204);
+    background-color: #64B7CC;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 12px #888888;
+    gap: 12px;
 }
 
-form button{
-    display: block;
+form label {
+    font-weight: bold;
+    color: white;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: rgb(233, 233, 233);
+}
+
+form button {
+    background-color: #B3093F;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #451531;
 }

@@ -14,6 +14,7 @@
         <nav>
             <ul>
                 <li><a href="./contato.html">Contato</a></li>
+                <li><a href="/api/lanches">API de Lanches</a></li>
             </ul>
         </nav>
     </header>
@@ -24,25 +25,30 @@
 
         <div id="cardapio">
             <div class="hb">
-                <h3>Tradicional</h3>
+                <h3>DevBurger Clássico</h3>
                 <div class="descricao">
-                    <div>
-                        <img src="/public/images/tradicional.jpg" alt="">
-                    </div>
-                    <div>
-                        <p>Pão de brioche, cheddar, alface, tomate, maionese, ketchup</p>
+                    <div class="ingredientes">
+                        <p>Pão brioche, Carne 150g, Queijo cheddar, Alface americana, Tomate fresco, Molho especial</p>
                     </div>
                 </div>
             </div>
 
             <div class="hb">
-                <h3>Frango</h3>
+                <h3>Burger de Bacon</h3>
                 <div class="descricao">
-                    <div>
-                        <img src="/public/images/frango.jpg" alt="">
+                    <div class="ingredientes">
+                        <p>Pão australiano, Carne 180g, Queijo prato, Bacon crocante, Cebola caramelizada, Molho
+                            barbecue</p>
                     </div>
-                    <div>
-                        <p>Pão de brioche, carne de frango, alface, tomate, cebola, maionese, ketchup</p>
+                </div>
+            </div>
+
+            <div class="hb">
+                <h3>Commit Veggie</h3>
+                <div class="descricao">
+                    <div class="ingredientes">
+                        <p>Pão integral, Burger de grão de bico, Queijo vegano, Rúcula, Tomate seco, Maionese de ervas
+                        </p>
                     </div>
                 </div>
             </div>
@@ -52,15 +58,12 @@
     <div class="corpoCardapio">
         <h2>Envie sugestões de lanches!</h2>
         <hr>
-        
+
         <div id="area">
             <form action="/sugestao" method="GET" autocomplete="off" id="formulario">
-                <fieldset>
-                    <legend>Formulário</legend>
-                    <label for="">Nome: </label><input type="text" name="nome">
-                    <label for="">Ingredientes: </label><textarea name="ingredientes" cols="35" rows="8"></textarea>
-                    <button class="btn_submit" type="submit">Enviar</button>
-                </fieldset>
+                <label for="">Nome: </label><input type="text" name="nome">
+                <label for="">Ingredientes: </label><textarea name="ingredientes" cols="35" rows="8"></textarea>
+                <button class="btn_submit" type="submit">Enviar</button>
             </form>
         </div>
     </div>
