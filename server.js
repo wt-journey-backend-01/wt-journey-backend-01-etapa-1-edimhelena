@@ -76,7 +76,7 @@ app.get('/sugestao', (req, res) => {
 
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/contato.html', (req, res) => {
+app.get('/contato', (req, res) => {
   res.status(200).sendFile(path.join(__dirname, "views", "contato.html"));
 });
 
